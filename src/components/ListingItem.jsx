@@ -9,8 +9,8 @@ function ListingItem({listing, id}) {
      <Link to={`/category/${listing.type}/${id}`} className='categoryListingLink'>
         <img src={listing.imageUrls[0]} alt={listing.name} className='categoryListingImg'/>
         <div className='categoryListingDetails'>
-            <p className='categoryListingLocation'>
-                {listing.location}
+            <p className='categoryListingAddress'>
+                {listing.address}
             </p>
             <p className="categoryListingName">
                 {listing.name}
@@ -44,3 +44,11 @@ function ListingItem({listing, id}) {
   }
   
   export default ListingItem;
+
+  /* 
+  {onDelete && (
+        <DeleteIcon className='removeIcon'
+        fill='rgb(231, 76, 60)'
+        onClick={() => onDelete(listing.id, listing.name)} />
+     )}
+  */

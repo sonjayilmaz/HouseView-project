@@ -19,10 +19,10 @@ function ListingItem({listing, id}) {
             <p className='categoryListingPrice'>
                 {listing.offer ? listing.discountedPrice
                     .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
                 : listing.regularPrice
                     .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}kr
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}kr
                     {listing.type === 'rent' && ' / month'}
             </p>
             <img src={bedIcon} alt='bed' />

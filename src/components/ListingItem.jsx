@@ -22,7 +22,7 @@ function ListingItem({listing, id}) {
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
                 : listing.regularPrice
                     .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}kr
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} kr
                     {listing.type === 'rent' && ' / month'}
             </p>
             <img src={bedIcon} alt='bed' />

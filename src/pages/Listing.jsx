@@ -55,8 +55,12 @@ function Listing() {
         <div className='listingDetails'>
             <p className='listingName'>{listing.name} -{' '}
             {listing.offer
-            ? listing.discountedPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')  
-            : listing.regularPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') }{' '}kr
+            ? listing.discountedPrice
+            .toString().
+            replace(/\B(?=(\d{3})+(?!\d))/g, ' ')  
+            : listing.regularPrice
+            .toString().
+            replace(/\B(?=(\d{3})+(?!\d))/g, ' ') }{' '}kr
             </p>
             <p className='listingLocation'>{listing.location}</p>
             <p className='listingType'>

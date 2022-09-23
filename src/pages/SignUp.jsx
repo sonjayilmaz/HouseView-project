@@ -52,7 +52,7 @@ function SignUp() {
 
     navigate('/')
     }catch(error){
-      toast.error('Something went wrong with registration')
+     toast.error('Something went wrong with registration')
     }
   }
 
@@ -107,9 +107,9 @@ function SignUp() {
           </button>
         </div>
       </form>
-      <OAuth />
-          <Link to='/sign-up' className='registerLink'>
-            Sign Up Instead
+          <OAuth />
+          <Link to='/sign-in' className='registerLink'>
+            Sign In Instead
           </Link>
       </div>
       </>
